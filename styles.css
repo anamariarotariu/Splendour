@@ -105,8 +105,8 @@ header {
   background-color: var(--choose-demo-section-background-color);
   height: 60em;
 }
-.main__section--choose--title {
-  padding-top: 2em;
+.main__section--title {
+  padding-top: 3em;
   text-align: center;
   font-size: 40px;
 }
