@@ -1,0 +1,103 @@
+:root {
+  --body-background-color: #faf8f5;
+  --nav-background-color: #262c18;
+  --header-text-color: #fff;
+  --nav-btn-border-color: #fff;
+  --nav-underline-color: #fff;
+  --btn-background-color-hover: #fff;
+  --btn-color-hover: #000;
+  --advice-section-background-color: #e6e1dc;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--body-background-color);
+}
+header {
+  height: 54em;
+  width: 100%;
+  background-color: var(--nav-background-color);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 4em;
+}
+.nav--items {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1em;
+}
+.nav--items li a {
+  margin: 1.2em;
+}
+.nav a {
+  text-decoration: none;
+  color: var(--header-text-color);
+  font-family: "Poppins", sans-serif;
+}
+.nav--item {
+  position: relative;
+  padding-bottom: 0.3em;
+}
+.nav--item:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: var(--nav-underline-color);
+  transition: width 0.3s ease-in-out;
+}
+.nav--item:hover:after {
+  width: 100%;
+}
+.nav--logo {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.nav--btn {
+  border: 1px solid var(--nav-btn-border-color);
+  padding: 1em 2em;
+}
+.nav--btn:hover {
+  background-color: var(--btn-background-color-hover);
+  color: var(--btn-color-hover);
+  transition: background-color 0.3s ease-in-out;
+}
+.header__site--description {
+  margin-left: 28%;
+  width: 45%;
+  text-align: center;
+  font-size: 45px;
+  color: var(--header-text-color);
+  line-height: 90%;
+}
+.header__main__image--container {
+  margin-left: 28%;
+  margin-top: 3%;
+  position: relative;
+  z-index: 1;
+}
+.header__site__name--background {
+  text-transform: uppercase;
+  font-size: 245px;
+  color: var(--header-text-color);
+  opacity: 0.2;
+  margin-top: -11%;
+}
+.uppercase-text {
+  text-transform: uppercase;
+}
+.main__section--advice {
+  font-size: 18px;
+  text-align: center;
+  padding: 2.5em 1em;
+  background-color: var(--advice-section-background-color);
+  height: 3em;
+}
