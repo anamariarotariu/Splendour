@@ -7,7 +7,8 @@
   --btn-color-hover: #000;
   --advice-section-background-color: #e6e1dc;
   --choose-demo-section-background-color: #faf8f5;
-  --choose--item-background-color: #f2ede9;
+  --choose--item-unannounced-background-color: #f2ede9;
+  --unannounced-text-color: #cdc9c6;
 }
 * {
   box-sizing: border-box;
@@ -110,10 +111,10 @@ header {
   font-size: 40px;
 }
 .main__section--choose--items {
-  width: 80%;
-  height: 50em;
+  width: 90%;
+  height: 40em;
   margin-top: 3em;
-  margin-left: 10%;
+  margin-left: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -123,17 +124,30 @@ header {
   height: 0;
   padding-bottom: 30%;
   position: relative;
-  margin-bottom: 5em;
-  background-color: var(--choose--item-background-color);
 }
 .main__section--choose--item img {
   position: absolute;
   width: 100%;
-  height: 55%;
+  height: 60%;
   object-fit: cover;
 }
 .main__section--choose--item span {
+  font-size: 22px;
   display: inline-block; /* added so I can add margin for span */
-  margin-top: 80%;
+  margin-top: 70%;
   margin-left: 40%;
+}
+.main__section--choose--item.unannounced {
+  background-color: var(--choose--item-unannounced-background-color);
+  padding-bottom: 18%;
+}
+#coming-soon {
+  display: inline-block;
+  margin-top: 25%;
+  margin-right: 30%;
+  color: var(--unannounced-text-color);
+}
+.main__section--choose--item img:hover {
+  transform: translateY(-5%);
+  transition: transform 0.3s ease-in-out;
 }
