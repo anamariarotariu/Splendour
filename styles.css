@@ -13,12 +13,16 @@
   --customer-benefits-card-even: #f2ede9;
   --customer-benefits-card-subtitle-text-color: #696866;
   --elementor-builder-description-text-color: #696866;
+  --portfolio-section-background-color: #f2ede9;
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+/* header */
+
 header {
   height: 54em;
   width: 100%;
@@ -105,15 +109,19 @@ header {
   height: 5em;
   padding-top: 2em;
 }
-.main__section--choose {
-  background-color: var(--choose-demo-section-background-color);
-  height: 60em;
-}
-/* generic stylings for section title and layout */
+
+/* generic stylings for section title and first 2 sections layout */
+
 .main__section--title {
   padding-top: 3em;
   text-align: center;
   font-size: 40px;
+}
+.main__section--description {
+  font-size: 18px;
+  margin-top: 2em;
+  line-height: 1.5em;
+  color: var(--elementor-builder-description-text-color);
 }
 .section {
   width: 90%;
@@ -123,7 +131,13 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-/* specific stylings */
+
+/* choose your demo section */
+
+.main__section--choose {
+  background-color: var(--choose-demo-section-background-color);
+  height: 60em;
+}
 .main__section--choose--items {
   height: 40em;
 }
@@ -159,6 +173,9 @@ header {
   transform: translateY(-5%);
   transition: transform 0.3s ease-in-out;
 }
+
+/* customer benefits section */
+
 .main__customer__benefits--cards {
   height: 50em;
 }
@@ -195,6 +212,9 @@ header {
   text-align: center;
   font-family: inherit;
 }
+
+/* elementor page builder section */
+
 .main__elementor__builder--section {
   width: 90%;
   margin-left: 5%;
@@ -206,10 +226,6 @@ header {
 }
 .main__elementor__builder--section--description {
   width: 50%;
-  font-size: 18px;
-  margin-top: 2em;
-  line-height: 1.5em;
-  color: var(--elementor-builder-description-text-color);
 }
 .main__elementor__builder--section--options {
   display: grid;
@@ -229,11 +245,38 @@ header {
   left: 60%;
   bottom: 90%;
   padding-bottom: 40%;
-  background-color: aqua;
 }
 .main__elementor__builder--section--aside img {
   position: absolute;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* portfolio layouts section */
+
+.main__portfolio--section {
+  margin-top: 10em;
+  height: 48em;
+  background-color: var(--portfolio-section-background-color);
+}
+#main__portfolio--section--description {
+  width: 32%;
+  text-align: center;
+  margin-left: 34%;
+}
+.main__portfolio--section--layout--examples {
+  margin-top: 3em;
+  height: 0;
+  width: 75%;
+  padding-bottom: 25%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.main__portfolio--section--layout--example img {
+  position: absolute;
+  width: 33%;
   height: 100%;
   object-fit: cover;
 }
