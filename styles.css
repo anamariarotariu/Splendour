@@ -1,5 +1,4 @@
 :root {
-  --body-background-color: #faf8f5;
   --nav-background-color: #262c18;
   --header-text-color: #fff;
   --nav-btn-border-color: #fff;
@@ -7,14 +6,13 @@
   --btn-background-color-hover: #fff;
   --btn-color-hover: #000;
   --advice-section-background-color: #e6e1dc;
+  --choose-demo-section-background-color: #faf8f5;
+  --choose--item-background-color: #f2ede9;
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-body {
-  background-color: var(--body-background-color);
 }
 header {
   height: 54em;
@@ -90,6 +88,7 @@ header {
   color: var(--header-text-color);
   opacity: 0.2;
   margin-top: -11%;
+  height: 26.5%;
 }
 .uppercase-text {
   text-transform: uppercase;
@@ -97,7 +96,44 @@ header {
 .main__section--advice {
   font-size: 18px;
   text-align: center;
-  padding: 2.5em 1em;
   background-color: var(--advice-section-background-color);
-  height: 3em;
+  height: 5em;
+  padding-top: 2em;
+}
+.main__section--choose {
+  background-color: var(--choose-demo-section-background-color);
+  height: 60em;
+}
+.main__section--choose--title {
+  padding-top: 2em;
+  text-align: center;
+  font-size: 40px;
+}
+.main__section--choose--items {
+  width: 80%;
+  height: 50em;
+  margin-top: 3em;
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main__section--choose--item {
+  flex: 0 0 32%;
+  height: 0;
+  padding-bottom: 30%;
+  position: relative;
+  margin-bottom: 5em;
+  background-color: var(--choose--item-background-color);
+}
+.main__section--choose--item img {
+  position: absolute;
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+}
+.main__section--choose--item span {
+  display: inline-block; /* added so I can add margin for span */
+  margin-top: 80%;
+  margin-left: 40%;
 }
