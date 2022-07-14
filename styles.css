@@ -12,6 +12,7 @@
   --customer-benefits-card-odd: #faf8f6;
   --customer-benefits-card-even: #f2ede9;
   --customer-benefits-card-subtitle-text-color: #696866;
+  --elementor-builder-description-text-color: #696866;
 }
 * {
   box-sizing: border-box;
@@ -193,4 +194,46 @@ header {
 .main__customer__benefits--card--subtitle.text {
   text-align: center;
   font-family: inherit;
+}
+.main__elementor__builder--section {
+  width: 90%;
+  margin-left: 5%;
+  height: 30em;
+}
+.main__elementor__builder--section--title {
+  font-size: 40px;
+  padding-top: 3em;
+}
+.main__elementor__builder--section--description {
+  width: 50%;
+  font-size: 18px;
+  margin-top: 2em;
+  line-height: 1.5em;
+  color: var(--elementor-builder-description-text-color);
+}
+.main__elementor__builder--section--options {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  width: 30%;
+  margin-left: 5%;
+  margin-top: 4%;
+  font-size: 18px;
+}
+.main__elementor__builder--section--option {
+  padding-bottom: 1.3em;
+}
+.main__elementor__builder--section--aside {
+  height: 0;
+  width: 40%;
+  position: relative;
+  left: 60%;
+  bottom: 90%;
+  padding-bottom: 40%;
+  background-color: aqua;
+}
+.main__elementor__builder--section--aside img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
