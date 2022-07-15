@@ -14,13 +14,17 @@
   --customer-benefits-card-subtitle-text-color: #696866;
   --elementor-builder-description-text-color: #696866;
   --portfolio-section-background-color: #f2ede9;
+  --woo--commerce--btn--color: #fff;
+  --woo--commerce--btn--background: rgb(56, 62, 41);
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+body {
+  font-family: "Poppins", sans-serif;
+}
 /* header */
 
 header {
@@ -45,24 +49,10 @@ header {
 .nav a {
   text-decoration: none;
   color: var(--header-text-color);
-  font-family: "Poppins", sans-serif;
 }
 .nav--item {
   position: relative;
   padding-bottom: 0.3em;
-}
-.nav--item:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 0;
-  height: 2px;
-  background-color: var(--nav-underline-color);
-  transition: width 0.3s ease-in-out;
-}
-.nav--item:hover:after {
-  width: 100%;
 }
 .nav--logo {
   text-transform: uppercase;
@@ -71,11 +61,6 @@ header {
 .nav--btn {
   border: 1px solid var(--nav-btn-border-color);
   padding: 1em 2em;
-}
-.nav--btn:hover {
-  background-color: var(--btn-background-color-hover);
-  color: var(--btn-color-hover);
-  transition: background-color 0.3s ease-in-out;
 }
 .header__site--description {
   margin-left: 28%;
@@ -169,11 +154,6 @@ header {
   margin-right: 30%;
   color: var(--unannounced-text-color);
 }
-.main__section--choose--item img:hover {
-  transform: translateY(-5%);
-  transition: transform 0.3s ease-in-out;
-}
-
 /* customer benefits section */
 
 .main__customer__benefits--cards {
@@ -210,7 +190,6 @@ header {
 .main__customer__benefits--card--title.text,
 .main__customer__benefits--card--subtitle.text {
   text-align: center;
-  font-family: inherit;
 }
 
 /* elementor page builder section */
@@ -279,4 +258,44 @@ header {
   width: 33%;
   height: 100%;
   object-fit: cover;
+}
+
+/* sell like a woo commerce section */
+#main__woo__commerce--title {
+  width: 40%;
+  height: 30%;
+  text-align: left;
+  position: relative;
+  left: 60%;
+  top: 5em;
+}
+.main__woo__commerce--section--aside {
+  height: 0;
+  width: 40%;
+  position: relative;
+  left: 10%;
+  top: -70%;
+  padding-bottom: 40%;
+}
+.main__woo__commerce--section--aside img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#main__woo__commerce--section--description {
+  width: 36%;
+  margin-left: 60%;
+  position: relative;
+  bottom: 20em;
+}
+.main__woo__commerce--button {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--woo--commerce--btn--color);
+  background-color: var(--woo--commerce--btn--background);
+  padding: 1em 2em;
+  position: relative;
+  bottom: 15em;
+  left: 48em;
 }
