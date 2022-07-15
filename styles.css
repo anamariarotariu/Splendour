@@ -14,8 +14,10 @@
   --customer-benefits-card-subtitle-text-color: #696866;
   --elementor-builder-description-text-color: #696866;
   --portfolio-section-background-color: #f2ede9;
-  --woo--commerce--btn--color: #fff;
-  --woo--commerce--btn--background: rgb(56, 62, 41);
+  --woo-commerce-btn-color: #fff;
+  --woo-commerce-btn-background: rgb(56, 62, 41);
+  --elegro-btn-color: #fff;
+  --elegro-btn-background: rgb(196, 164, 144);
 }
 * {
   box-sizing: border-box;
@@ -261,6 +263,7 @@ header {
 }
 
 /* sell like a woo commerce section */
+
 #main__woo__commerce--title {
   width: 40%;
   height: 30%;
@@ -292,10 +295,28 @@ header {
 .main__woo__commerce--button {
   font-size: 18px;
   text-decoration: none;
-  color: var(--woo--commerce--btn--color);
-  background-color: var(--woo--commerce--btn--background);
+  color: var(--woo-commerce-btn-color);
+  background-color: var(--woo-commerce-btn-background);
   padding: 1em 2em;
   position: relative;
   bottom: 15em;
   left: 48em;
+}
+/* elegro section */
+#main__elegro--section--title {
+  text-align: left;
+  width: 35%;
+  margin-left: 5%;
+}
+#main__elegro--section--description {
+  width: 60%;
+  margin-left: 5%;
+}
+.main__elegro--section--btn {
+  text-decoration: none;
+  color: var(--elegro-btn-color);
+  background-color: var(--elegro-btn-background);
+  padding: 1em 2em;
+  margin-left: 5%;
+  margin-top: 10em;
 }
