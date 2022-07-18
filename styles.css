@@ -18,6 +18,7 @@
   --woo-commerce-btn-background: rgb(56, 62, 41);
   --elegro-btn-color: #fff;
   --elegro-btn-background: rgb(196, 164, 144);
+  --image-list-background-color: rgb(250, 248, 246);
 }
 * {
   box-sizing: border-box;
@@ -341,6 +342,7 @@ header {
   display: flex;
   justify-content: space-around;
   padding: 0 4em;
+  height: 45em;
 }
 #main__elegro--section--title {
   text-align: left;
@@ -371,4 +373,9 @@ header {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+/*  grid with images after elegro section*/
+.main__image--list {
+  height: 15em;
+  background-color: var(--image-list-background-color);
 }
