@@ -23,6 +23,7 @@
   --flexible-section-text-color: #fff;
   --responsive-section-btn-background: rgb(196, 164, 144);
   --responsive-section-btn-color: #fff;
+  --feature-section-background-color: rgb(250, 248, 246);
 }
 * {
   box-sizing: border-box;
@@ -489,4 +490,27 @@ header {
   width: 100%;
   position: absolute;
   object-fit: cover;
+}
+/* feature section */
+
+.main__features--section {
+  padding: 0 2em;
+  height: 50em;
+  background-color: var(--feature-section-background-color);
+}
+.main__features--grid--items {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  row-gap: 30px;
+}
+.main__features--grid--item {
+  text-align: center;
+}
+.main__features--grid--item--description {
+  width: 97%;
+  font-size: 14px;
+}
+.main__features--grid--item--image img {
+  width: 20%;
+  height: 20%;
 }
