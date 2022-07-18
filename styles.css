@@ -24,6 +24,10 @@
   --responsive-section-btn-background: rgb(196, 164, 144);
   --responsive-section-btn-color: #fff;
   --feature-section-background-color: rgb(250, 248, 246);
+  --footer-background-color: rgb(26, 24, 22);
+  --footer-text-color: #fff;
+  --footer-line-color: rgb(37, 36, 34);
+  --footer-copyright-text-color: rgb(129, 128, 127);
 }
 * {
   box-sizing: border-box;
@@ -513,4 +517,32 @@ header {
 .main__features--grid--item--image img {
   width: 20%;
   height: 20%;
+}
+
+/* footer */
+.footer {
+  padding: 3em;
+  height: 55em;
+  background-color: var(--footer-background-color);
+  color: var(--footer-text-color);
+  text-align: center;
+}
+.footer__text--wrapper {
+  width: 50%;
+  margin: 1em 20em;
+}
+.footer__logo--container img {
+  width: 20%;
+  height: 20%;
+}
+.footer--copyright--items {
+  border-top: 1px solid var(--footer-line-color);
+  margin: 18em 0;
+  display: flex;
+  justify-content: space-between;
+  color: var(--footer-copyright-text-color);
+}
+.footer--copyright--item {
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
