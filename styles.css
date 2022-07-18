@@ -337,20 +337,38 @@ header {
   left: 48em;
 }
 /* elegro section */
+.main__elegro--section {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 4em;
+}
 #main__elegro--section--title {
   text-align: left;
-  width: 35%;
-  margin-left: 5%;
+  width: 80%;
+  margin: auto 5%;
 }
 #main__elegro--section--description {
   width: 60%;
-  margin-left: 5%;
+  margin: 0em 1.4em;
 }
 .main__elegro--section--btn {
   text-decoration: none;
   color: var(--elegro-btn-color);
   background-color: var(--elegro-btn-background);
   padding: 1em 2em;
-  margin-left: 5%;
-  margin-top: 10em;
+  display: inline-block;
+  margin: 3em 1.4em;
+}
+.main__elegro--image--container {
+  height: 0;
+  padding-bottom: 43%;
+  position: relative;
+  width: 100%;
+  top: 4em;
+}
+.main__elegro--image--container img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
