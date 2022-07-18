@@ -21,6 +21,8 @@
   --image-list-background-color: rgb(250, 248, 246);
   --flexible-section-background: rgb(38, 44, 25);
   --flexible-section-text-color: #fff;
+  --responsive-section-btn-background: rgb(196, 164, 144);
+  --responsive-section-btn-color: #fff;
 }
 * {
   box-sizing: border-box;
@@ -29,6 +31,9 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
 }
 /* header */
 
@@ -121,7 +126,7 @@ header {
   padding-top: 2em;
 }
 
-/* generic stylings for section title and first 2 sections layout */
+/* generic stylings */
 
 .main__section--title {
   padding-top: 1.5em;
@@ -141,6 +146,12 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 2.38rem;
+}
+.btn {
+  color: var(--elegro-btn-color);
+  background-color: var(--elegro-btn-background);
+  padding: 1em 2em;
+  display: inline-block;
 }
 
 /* choose your demo section */
@@ -340,6 +351,7 @@ header {
   left: 48em;
 }
 /* elegro section */
+
 .main__elegro--section {
   display: flex;
   justify-content: space-around;
@@ -356,11 +368,6 @@ header {
   margin: 0em 1.4em;
 }
 .main__elegro--section--btn {
-  text-decoration: none;
-  color: var(--elegro-btn-color);
-  background-color: var(--elegro-btn-background);
-  padding: 1em 2em;
-  display: inline-block;
   margin: 3em 1.4em;
 }
 .main__elegro--image--container {
@@ -376,7 +383,9 @@ header {
   width: 100%;
   object-fit: cover;
 }
+
 /*  grid with images after elegro section */
+
 .main__image--list {
   height: 25em;
   background-color: var(--image-list-background-color);
@@ -399,6 +408,7 @@ header {
   height: 100%;
   object-fit: cover;
 }
+
 /* flexible section  */
 
 .main__flexible--section {
@@ -445,4 +455,38 @@ header {
   font-size: 20px;
   width: 60%;
   text-align: center;
+}
+
+/* responsive design section */
+
+.main__responsive--section {
+  height: 40em;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+.main__responsive--section--text--wrapper {
+  margin: 10em 5em;
+}
+.main__responsive--section--text--wrapper h1 {
+  font-size: 48px;
+}
+.main__responsive--section--btn {
+  margin: 2em 0;
+}
+#main__responsive--description {
+  width: 53%;
+}
+.main__responsive--section--image--wrapper {
+  position: relative;
+  height: 0;
+  height: 30em;
+  width: 50em;
+  padding-top: 6em;
+}
+.main__responsive--section--image--wrapper img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
 }
